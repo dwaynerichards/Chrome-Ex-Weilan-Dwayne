@@ -8,8 +8,9 @@
       },
     "browser_action": {
     "default_icon": "assets/LookSound.png",
-    "default_popup": "assets/LookSound.png"},
-    "permissions": [
+    "default_popup": "assets/LookSound.png"
+  },
+  "permissions": [
     "tabs",
     "unlimitedStorage",
     "notifications",
@@ -17,5 +18,6 @@
     "contentSettings",
     "debugger",
     "desktopCapture",
-    "storage"]
+    "storage"
+  ]
 }
