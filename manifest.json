@@ -3,21 +3,22 @@
     "name": "thisNoise",
     "description": "where is the sound coming from",
     "version": "1.1",
-    "icons": {
-    "128": "128.png"
-    },
-    "app": {
-    "urls": [
-    "http://certification.googleapps.com/app-info/"
-    ],
-    "launch": {
-    "web_url": "http://certification.googleapps.com/"
-    }
-    },
+    "background": {
+        "service_worker": "background.js",
+        "scripts": ["eventPage.js"],
+        "persistent": false
+      }
+    //"icons": {"assets/LookSound.jpeg"}, 
+    "browser_action": {
+    "default_icon": "assets/LookSound.png",
+    "default_popup": "assets/LookSound.png"},
     "permissions": [
-    "tabs"
+    "tabs",
     "unlimitedStorage",
-    "notifications"
-    ]
-    }
-    
+    "notifications",
+    "background",
+    "contentSettings",
+    "debugger",
+    "desktopCapture",
+    "storage"]
+}
